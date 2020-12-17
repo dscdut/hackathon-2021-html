@@ -7,6 +7,13 @@
 .about__right-content--wrapper {
   flex: 3
 }
+.about__title {
+  background-image: url(../img/about/title-underline.svg);
+  background-repeat: no-repeat;
+  background-size: 320px 1rem;
+  background-position-x: right;
+  background-position-y: bottom;
+}
 .about__content--wrapper {
   width: 580px;
   padding-top: 3rem;
