@@ -13,85 +13,28 @@
   <!-- You can't enable additional variants like group-focus -->
   <!-- You can't install third-party plugins -->
   <!-- You can't tree-shake unused styles -->
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    button {
-      outline: none !important;
-    }
-    .header--wrapper {
-      height: 100vh;
-      background-image: url(./assets/img/header/bg-header.png);
-      background-repeat: no-repeat;
-      background-position-x: right;
-    }
-    .header--container {
-      background-color: #ffffff00;
-    }
-    .header__left-content--wrapper {
-      flex: 4
-    }
-    .header__right-content--wrapper {
-      flex: 3
-    }
-    .header__content--wrapper {
-      width: 580px;
-    }
-    /* Large devices (desktops, less than 1200px) */
-    @media (max-width: 1199.98px) { 
-      .header--wrapper {
-        height: 100vh;
-        background-image: url(./assets/img/header/bg-header.png);
-        background-repeat: no-repeat;
-        background-position-x: right;
-      }
-    }
-    /* Medium devices (tablets, less than 992px) */
-    /* 991.98px at first, change to 1024px to suit iPad Pro */
-    @media (max-width: 1024px) {
-      .header--container {
-        background-color: #ffffffc4;
-      }
-      .header__left-content--wrapper {
-        flex: 1;
-      }
-      .header__right-content--wrapper {
-        flex: 0
-      }
-    }
-    /* Small devices (landscape phones, less than 768px) */
-    @media (max-width: 767.98px) {
-
-    }
-    /* X-Small devices (portrait phones, less than 576px) */
-    @media (max-width: 575.98px) {
-      .header--wrapper {
-        height: auto;
-      }
-      .header__content--wrapper {
-        width: 320px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
 </head>
 <body>
   <div id="app">
     <!-- Header section -->
     <header class="header--wrapper duration-300">
-      <div class="flex h-full duration-300 header--container">
-        <div class="header__left-content--wrapper h-full flex flex-col items-center mt-10">
-          <!-- Content wrapper -->
-          <div class="header__content--wrapper">
+      <div class="header--container h-full duration-300">
+        <div class="section--container h-full">
+          <div class="header__content--wrapper h-full">
             <!-- DSC Logo -->
-            <div class="pl-1 flex items-center w-full">
+            <div class="pl-1 flex items-center w-full pt-10">
               <img class="inline-block h-8 w-auto" src="./assets/img/logo.svg" alt="DSC logo">
               <span class="inline-block text-4xl ml-2 text-gray-500 duration-300" style="letter-spacing: 1px;">
                 Developer Student Clubs
               </span>
             </div>
-            <div class="lg:h-40 md:h-20 h-10 duration-300"></div>
+            <div class="lg:h-32 md:h-16 h-10 duration-300"></div>
             <!-- Main header content -->
             <div class="w-full">
-              <h1 class="text-8xl font-semibold duration-300">
+              <h1 class="text-8xl font-semibold mb-3 duration-300">
                 <span class="text-yellow-600">DSC</span>
                 <span class="text-green-600">ONLINE</span>
                 <br />
@@ -103,7 +46,7 @@
                 est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa.
               </p>
               <!-- Buttons and stuff -->
-              <div class="text-left my-5">
+              <div class="text-left my-10">
                 <button class="font-bold py-2 px-4 mr-2 rounded-full bg-blue-500 hover:bg-blue-700 text-white duration-300">
                   Register now
                 </button>
@@ -114,12 +57,42 @@
             </div>
           </div>
         </div>
-        <div class="header__right-content--wrapper"></div>
       </div>
     </header>
     <!-- End header section -->
     <!-- About section -->
-    <section>
+    <section class="section--container duration-300 mb-10">
+      <div class="flex h-full duration-300 about--container">
+        <div class="about__left-content--wrapper h-full flex flex-col items-center">
+          <!-- About image wrapper -->
+          <div class="w-full">
+            <img class="mx-auto" src="./assets/img/about/bg-about.png" alt="DSC about image">
+          </div>
+        </div>
+        <div class="about__right-content--wrapper">
+          <!-- Content wrapper -->
+          <div class="about__content--wrapper">
+            <!-- Main about content -->
+            <div class="w-full">
+              <h2 class="text-xl text-blue-600 mb-5 font-bold">
+                <span>
+                  About DSC
+                </span>
+                <span class="inline-block h-2 w-16 mb-1 ml-3" style="background-image: linear-gradient(to right, rgb(85, 95, 240) , #ffffff00);"></span>
+              </h2>
+              <h3 class="text-3xl text-gray-800 mb-8 font-bold">
+                Help students bridge the gap be tween theory and practice
+              </h3>
+              <p class="text-xl text-gray-600 duration-300">
+                <strong>Developer Student Clubs (DSC)</strong> are university based community groups for students
+                interested in Google developer technologies. Students from all undergraduate or 
+                graduate programs with an interest in growing as a developer are welcome.
+              </p>
+              <a href="" target="_blank" class="inline-block text-xl text-blue-600 mt-3">See more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End about section -->
     <!-- News and activities section -->
@@ -138,6 +111,6 @@
     </footer>
     <!-- End footer section -->
   </div>
-  <script src="./script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

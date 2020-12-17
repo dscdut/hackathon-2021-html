@@ -1,0 +1,59 @@
+.about--container {
+  background-color: #ffffff00;
+}
+.about__left-content--wrapper {
+  flex: 4
+}
+.about__right-content--wrapper {
+  flex: 3
+}
+.about__content--wrapper {
+  width: 580px;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+@media (max-width: 1399.98px) { 
+  .about__content--wrapper {
+    padding-top: 1.25rem;
+  }
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+  .about--container {
+    flex-direction: column-reverse;
+  }
+  .about__content--wrapper {
+    width: auto;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+/* 991.98px at first, change to 1024px to suit iPad Pro */
+@media (max-width: 1024px) {
+  .about--container {
+    background-color: #ffffffc4;
+    max-width: 580px ;
+    margin: auto;
+  }
+  .about__left-content--wrapper {
+    flex: 1;
+  }
+  .about__right-content--wrapper {
+    flex: 0
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* .about--wrapper {
+    height: auto;
+  }
+  .about__content--wrapper {
+    width: 320px;
+  } */
+}
