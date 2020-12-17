@@ -1,53 +1,54 @@
-.about--container {
+.about-dsc--container {
   background-color: #ffffff00;
 }
-.about__left-content--wrapper {
+.about-dsc__left-content--wrapper {
   flex: 4
 }
-.about__right-content--wrapper {
+.about-dsc__right-content--wrapper {
   flex: 3
 }
-.about__title {
-  background-image: url(../img/about/title-underline.svg);
+.about-dsc__title {
+  background-image: url(../img/about-dsc/title-underline.svg);
   background-repeat: no-repeat;
   background-size: 320px 1rem;
   background-position-x: right;
   background-position-y: bottom;
 }
-.about__content--wrapper {
+.about-dsc__content--wrapper {
   width: 580px;
   padding-top: 3rem;
   padding-left: 3rem;
   padding-right: 2rem;
 }
 @media (max-width: 1399.98px) { 
-  .about__content--wrapper {
+  .about-dsc__content--wrapper {
     padding-top: 1.25rem;
   }
 }
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
-  .about--container {
-    flex-direction: column-reverse;
+  .about-dsc--container {
+    flex-direction: column;
   }
-  .about__content--wrapper {
+  .about-dsc__content--wrapper {
     width: auto;
     padding: 0;
+    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }
 /* Medium devices (tablets, less than 992px) */
 /* 991.98px at first, change to 1024px to suit iPad Pro */
 @media (max-width: 1024px) {
-  .about--container {
+  .about-dsc--container {
     background-color: #ffffffc4;
     max-width: 580px ;
     margin: auto;
   }
-  .about__left-content--wrapper {
+  .about-dsc__left-content--wrapper {
     flex: 1;
   }
-  .about__right-content--wrapper {
+  .about-dsc__right-content--wrapper {
     flex: 0
   }
 }
@@ -57,10 +58,10 @@
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  /* .about--wrapper {
+  /* .about-dsc--wrapper {
     height: auto;
   }
-  .about__content--wrapper {
+  .about-dsc__content--wrapper {
     width: 320px;
   } */
 }

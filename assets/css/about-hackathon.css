@@ -1,0 +1,13 @@
+.about-hackathon__title {
+  background-image: url(../img/about-hackathon/title-underline.svg);
+  background-repeat: no-repeat;
+  background-size: 320px 1rem;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+.about-hackathon__item--backdrop {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.3);
+}
