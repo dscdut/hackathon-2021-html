@@ -1,0 +1,5 @@
+/* This project uses Tailwind CSS */
+/* Install Tailwind CSS via npm or yarn to customize and use treeshake feature */
+button {
+  outline: none !important;
+}
