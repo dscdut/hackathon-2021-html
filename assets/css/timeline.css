@@ -9,7 +9,7 @@
 .timeline--wrapper {
   width: 100%;
   height: 80vh;
-  background-image: url(https://devfest.gdgmientrung.com/wp-content/uploads/2017/09/statistic.jpg);
+  background-image: url(../img/timeline/bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
