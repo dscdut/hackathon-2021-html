@@ -7,7 +7,6 @@
    }
 .people--wrapper {
      width: 100%;
-     height: 80vh;
 }
 .people__card {
      flex:1
@@ -21,7 +20,7 @@
      cursor: pointer;
 }
 .people__nextButton {
-     left:0
+     left:0;
 }
 .people__prevButton {
      right:0
@@ -33,7 +32,7 @@
 }
 @media (max-width: 767.98px) {
      .md-hidden {
-           display:none
+          display:none
      }
      .people__card--container{
           width:100%
