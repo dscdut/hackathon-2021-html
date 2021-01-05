@@ -1,5 +1,6 @@
 .accompanying--wrapper{
      position: relative;
+     width: 100%;
 }
 .accompanying__title {
      background-image: url(../img/timeline/title-underline.svg);
